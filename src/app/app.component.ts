@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'revor-f';
+  clicks = 0;
+  onChanged(increased: any) {
+    increased === true ? this.clicks++ : this.clicks--;
+  }
 }
